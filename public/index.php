@@ -5,7 +5,7 @@ require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
 
 Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
-Router::add('([a-z-]+)/([a-z-]+)');
+Router::add('(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)');
 
 debug(Router::getRoutes());
 
