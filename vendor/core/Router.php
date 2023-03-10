@@ -35,11 +35,18 @@ class Router {
         }
         return false;
     }
+
     public static function dispatch($url) {
         if (self::matchRoute($url)) {
-            $controller = self::$route['controller'];
+            $controller = self::upperCamelCase(self::$route['controller']);
             if (class_exists($controller)) {
-                echo 'OK';
+                $cObj = new $controller;
+                $action = self::loverCamelCase(self::$route['action']) . 'Action';
+                if (method_exists($cObj, $action)) {
+                    $cObj->$action();
+                } else {
+                    echo "Метод :<b>$controller::$action</b> не найден";
+                }
             } else {
                 echo "Контроллер :<b>$controller</b> не найден";
             }
@@ -47,5 +54,11 @@ class Router {
             http_response_code(404);
             include '404.html';
         }
+    }
+    protected static function upperCamelCase($name) {
+        return str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
+    }
+    protected static function loverCamelCase($name) {
+        return lcfirst(self::upperCamelCase($name));
     }
 }
