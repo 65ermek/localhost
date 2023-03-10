@@ -7,4 +7,7 @@ class Pages {
     public function aboutAction() {
         echo 'About::index';
     }
+    public function contactAction() {
+        echo 'Contact::index';
+    }
 }
