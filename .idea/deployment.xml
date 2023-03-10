@@ -12,6 +12,9 @@
             <excludedPath path="/www/domains/tanatar.cz/config_db.php" />
             <excludedPath path="/www/domains/tanatar.cz/public/.htaccess" />
             <excludedPath path="/www/domains/tanatar.cz/.htaccess" />
+            <excludedPath local="true" path="$PROJECT_DIR$/config/config_db.php" />
+            <excludedPath local="true" path="$PROJECT_DIR$/composer.json" />
+            <excludedPath local="true" path="$PROJECT_DIR$/package-lock.json" />
           </excludedPaths>
         </serverdata>
       </paths>
