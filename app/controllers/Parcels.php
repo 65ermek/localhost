@@ -1,6 +1,11 @@
 <?php
 
-class Parcels {
+namespace app\controllers;
+
+use vendor\core\base\Controller;
+
+class Parcels extends Controller {
+
     public function indexAction() {
         echo 'Parcels::index';
     }

@@ -15,6 +15,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/config/config_db.php" />
             <excludedPath local="true" path="$PROJECT_DIR$/composer.json" />
             <excludedPath local="true" path="$PROJECT_DIR$/package-lock.json" />
+            <excludedPath path="/www/domains/tanatar.cz/android-chrome-192x192.png" />
           </excludedPaths>
         </serverdata>
       </paths>

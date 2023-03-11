@@ -1,13 +1,14 @@
 <?php
 
-class Pages {
-    public function indexAction() {
-        echo 'Pages::index';
-    }
-    public function aboutAction() {
-        echo 'About::index';
-    }
-    public function contactAction() {
-        echo 'Contact::index';
+namespace app\controllers;
+
+use vendor\core\base\Controller;
+
+class Pages extends Controller {
+    public function viewAction() {
+        debug($this->route);
+        debug($_GET);
+        echo $_GET['var1'];
+        echo 'Pages::view';
     }
 }
