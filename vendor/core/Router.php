@@ -40,7 +40,7 @@ class Router {
     public static function dispatch($url) {
         $url = self::removeQueryString($url);
         if (self::matchRoute($url)) {
-            $controller = 'app\controllers\\' . self::$route['controller'];
+            $controller = 'app\controllers\\' . self::$route['controller'] . 'Controller';
             if (class_exists($controller)) {
                 $cObj = new $controller(self::$route);
                 $action = self::loverCamelCase(self::$route['action']) . 'Action';

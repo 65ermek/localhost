@@ -3,7 +3,7 @@
 namespace app\controllers;
 
 
-class Pages extends App {
+class PagesController extends AppController {
     public function viewAction() {
 
     }

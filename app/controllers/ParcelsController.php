@@ -3,7 +3,7 @@
 namespace app\controllers;
 
 
-class Parcels extends App {
+class ParcelsController extends AppController {
 
     public function indexAction() {
 
