@@ -16,6 +16,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/composer.json" />
             <excludedPath local="true" path="$PROJECT_DIR$/package-lock.json" />
             <excludedPath path="/www/domains/tanatar.cz/android-chrome-192x192.png" />
+            <excludedPath local="true" path="$PROJECT_DIR$/public/scss" />
           </excludedPaths>
         </serverdata>
       </paths>

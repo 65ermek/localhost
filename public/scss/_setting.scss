@@ -1,0 +1,87 @@
+/* Simple reset */
+* {
+  border-color: transparent;
+  box-shadow: none;
+  outline-style: none;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img,svg {
+  vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,body {
+  height: 100%;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+body._lock {
+  overflow: hidden;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+body._pc .menu__list li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+body._touch .menu__list li.active .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+.main {
+  padding: 80px 0 0 0;
+}
