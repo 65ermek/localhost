@@ -13,7 +13,7 @@
             <header class="header">
                 <div class="header__container">
                     <a href="/" class="header__logo">
-                        <img src="images/png/post.png" alt="">
+                        <img src="/images/png/post.png" alt="">
                     </a>
                     <div class="header__menu menu">
                         <div class="menu__icon"><span></span></div>
@@ -51,7 +51,7 @@
                             </ul>
                             <div class="menu__list-auth">
                                 <a href="/user/login" class="menu__link-auth">Вход</a>
-                                <a href="/user/sent" class="menu__link-auth">Послать посылку</a>
+                                <a href="/parcels/add" class="menu__link-auth">Послать посылку</a>
                             </div>
                         </nav>
                     </div>

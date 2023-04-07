@@ -1,0 +1,48 @@
+@import "tabs/tabs";
+.tabs__title {
+  font-size: 18px;
+  padding: 20px 0;
+  font-family: Montserrat-Bold,sans-serif;
+}
+.tabs {
+  font-family: Montserrat, sans-serif;
+  color: #999999;
+  text-align: center;
+  width: 100%;
+
+}
+.tabs__nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.tab__nav-link span {
+  display: flex;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: #fb908c;
+  color: #ffffff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 24px;
+}
+.tab__nav-title {
+  margin: 20px 0;
+}
+.tab__nav-link.active > p{
+  font-family: Montserrat-Bold,sans-serif;
+  color: #999999;
+}
+.tab__nav-link.active span{
+  background-color: #d14842;
+  font-family: Montserrat-Bold, sans-serif;
+}
+.tab__item {
+  display: none;
+}
+.tab__item.active {
+  display: block;
+}

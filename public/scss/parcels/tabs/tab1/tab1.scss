@@ -1,0 +1,9 @@
+.section__block {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.section__block-label {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}

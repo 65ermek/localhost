@@ -39,6 +39,15 @@
   border-radius: 16px;
   background-color: transparent;
 }
+.menu__list-auth a {
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.menu__list-auth a:hover {
+  background-color: #F3F2F5;
+}
 .menu__link {
   color: #333333;
   cursor: pointer;

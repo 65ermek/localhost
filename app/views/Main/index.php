@@ -13,10 +13,17 @@
         </div>
     </div>
 </section>
-<section class="page__section page__section-2">
-    <h1>Отслеживание в режиме реального времени</h1>
-    <h2>Довезём за три дня</h2>
-    <p>Наша компания работает по единому тарифу по всей территории России. Все посылки можно отследить в режиме реального времени. Мы применяем последние технологии.</p>
+<section class="section bg__athensgray">
+    <div class="section__two-content">
+        <div class="section__two-container">
+            <div class="section__two-body">
+                <h1 class="section__two-h1">Отслеживание в режиме реального времени</h1>
+                <h2 class="section__two-h2">Довезём за три дня</h2>
+                <p class="section__two-p">Наша компания работает по единому тарифу по всей территории России. Все посылки можно отследить в режиме реального времени. Мы применяем последние технологии.</p>
+            </div>
+        </div>
+        <div class="section__two-image"><img src="/images/png/lada.png" alt="Lada"></div>
+    </div>
 </section>
 <section class="page__section page__section-3">
     <h1>Страхование посылок</h1>

@@ -1,7 +1,11 @@
-@media (max-width: 767px) {
+@media (min-width:767px) {
+
+}
+@media (max-width:767px) {
+  .section {
+  }
   .page__section {
     &-bg {
-      background: url("/../images/jpeg/banner.jpg") no-repeat top;
       height: 454px;
       background-size: cover;
     }
@@ -21,6 +25,15 @@
       line-height: 1.35;
       font-size: 18px;
       color: #ffffff;
+    }
+  }
+  .section__two {
+
+    &-content {
+      flex-direction: column;
+    }
+    &-container {
+      width: 100%;
     }
   }
 }
