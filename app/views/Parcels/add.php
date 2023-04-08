@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="tab__content">
-        <div id="tab_1" class="tab__item"><?php include('tab-1.php')?><button class="tab__next" data-but="2">Далее1</button></div>
+        <div id="tab_1" class="tab__item"><?php include('tab-1.php')?><button class="tab__next" data-but="2">Далее</button></div>
         <div id="tab_2" class="tab__item"><?php include('tab-2.php')?><button class="tab__prev" data-but="1">Назад</button><button class="tab__next" data-but="3">Далее</button></div>
         <div id="tab_3" class="tab__item"><?php include('tab-3.php')?><button class="tab__prev" data-but="2">Назад</button><button class="tab__next" data-but="4">Далее</button></div>
         <div id="tab_4" class="tab__item"><?php include('tab-4.php')?><button class="tab__prev" data-but="3">Назад</button><button class="tab__next" data-but="5">Далее</button></div>
@@ -22,7 +22,7 @@
     let openTab = {
         openProg1() {
             let num = document.querySelectorAll('.tab__nav-link')[0];
-                num.classList.add('active');
+            num.classList.add('active');
         },
         openTab1() {
             let tabItem = document.querySelectorAll('.tab__item')[0];
@@ -123,7 +123,7 @@
     openTab.openTab1();
     document.addEventListener('click', function (e) {
         if (e.target.dataset.but) {
-           e.preventDefault();
+            e.preventDefault();
             if (e.target.dataset.but == 1) {
                 openTab.openTab1();
                 openTab.closeProg2();
