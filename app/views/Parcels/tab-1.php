@@ -70,5 +70,15 @@
             </label>
         </div>
     </section>
+    <section class="agree">
+        <a href="/../images/off.pdf" target="_blank" class="agree__link">Обязательно ознакомьтесь со списком запрещенных предметов к отсылке</a>
+        <div class="checkbox__package">
+            <input name="package" type="checkbox" class="checkbox__package-input" required>
+            <label for="package" class="checkbox__package-label">Я ознакомился с условиями
+                <a href="/../images/off.pdf" target="_blank"> упаковки посылок</a>
+            </label>
+        </div>
+        <div class="package__error">Это поле обязательно к прочтению, чтобы продолжить, выберите этот флажок</div>
+    </section>
 </section>
 

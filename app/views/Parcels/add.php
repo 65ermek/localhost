@@ -18,6 +18,7 @@
     </div>
 </div>
 <script src="/js/line.js"></script>
+<script src="/js/choice.js"></script>
 <script>
     let openTab = {
         openProg1() {
@@ -165,7 +166,4 @@
             }
         }
     });
-
-
-
 </script>
