@@ -2,9 +2,9 @@ function connect(div1, div2, color, thickness) {
     const off1 = getOffset(div1);
     const off2 = getOffset(div2);
     const x1 = off1.left + (off1.width/2);
-    const y1 = off1.top + off1.height - 25;
+    const y1 = off1.top + off1.height - 35;
     const x2 = off2.left + (off2.width/2);
-    const y2 = off2.top + 25;
+    const y2 = off2.top + 35;
     const length = Math.sqrt(((x2-x1) * (x2-x1)) + ((y2-y1) * (y2-y1)));
     const cx = ((x1 + x2) / 2) - (length / 2);
     const cy = ((y1 + y2) / 2) - (thickness / 2);
@@ -24,15 +24,19 @@ function getOffset( el ) {
     };
 }
 window.testIt = function() {
+    let div0 = document.getElementById('div0');
     let div1 = document.getElementById('div1');
     let div2 = document.getElementById('div2');
     let div3 = document.getElementById('div3');
     let div4 = document.getElementById('div4');
     let div5 = document.getElementById('div5');
+    let div6 = document.getElementById('div6');
 
-    connect(div1, div2, "#ccc", 1);
-    connect(div2, div3, "#ccc", 1);
-    connect(div3, div4, "#ccc", 1);
-    connect(div4, div5, "#ccc", 1);
+    connect(div0, div1, "#ff632a", 2);
+    connect(div1, div2, "#ffb194", 2);
+    connect(div2, div3, "#ffb194", 2);
+    connect(div3, div4, "#ffb194", 2);
+    connect(div4, div5, "#ffb194", 2);
+    connect(div5, div6, "#ffb194", 2);
 }
 testIt();

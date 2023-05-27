@@ -91,6 +91,7 @@
     border-bottom: 3px solid transparent;
     border-bottom-color: hsla(260deg, 3%, 63%, 0.28);
     border-radius: 0;
+    position: relative;
   }
   .menu__link {
     font-size: 15px;
@@ -99,7 +100,7 @@
   .menu__sub-list{
     position: absolute;
     top: 50px;
-    left: 10px;
+    left: 50px;
     background-color: #ffffff;
     margin: 20px 0 0 0;
     opacity: 0;
