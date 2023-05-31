@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="myscoupe" pattern="file[localhost]:*" />
+</component>

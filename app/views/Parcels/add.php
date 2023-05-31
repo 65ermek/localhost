@@ -1,7 +1,7 @@
 <div class="container">
     <div class="tabs__title">Оформление посылки</div>
     <div class="tabs">
-        <div class="tabs__nav">
+        <div class="tabs__nav tabs__nav-pc">
             <span class="line" id="div0"></span>
             <div class="tab__nav-link"><span class="tab__num" id="div1">1</span><p class="tab__nav-title">Посылка</p></div>
             <div class="tab__nav-link"><span class="tab__num" id="div2">2</span><p class="tab__nav-title">Отправитель</p></div>
@@ -9,6 +9,11 @@
             <div class="tab__nav-link"><span class="tab__num" id="div4">4</span><p class="tab__nav-title">Оплата</p></div>
             <div class="tab__nav-link"><span class="tab__num" id="div5">5</span><p class="tab__nav-title">Наклейка</p></div>
             <span class="line" id="div6"></span>
+        </div>
+        <div class="tabs__nav tabs__nav-mob">
+            <span class="line" id="div10"></span>
+            <div class="tab__nav-link-mob active"><span class="tab__num" id="div11">1</span></div>
+            <div class="tab__nav-link-mob__right"><span class="tab__num" id="div12">2</span></div>
         </div>
     </div>
     <div class="tab__content">
@@ -126,7 +131,7 @@
     openTab.openTab1();
     document.addEventListener('click', function (e) {
         if (e.target.dataset.but) {
-                        e.preventDefault();
+            e.preventDefault();
             if (e.target.dataset.but == 1) {
                 openTab.openTab1();
                 openTab.closeProg2();

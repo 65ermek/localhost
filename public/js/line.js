@@ -39,4 +39,17 @@ window.testIt = function() {
     connect(div4, div5, "#ffb194", 2);
     connect(div5, div6, "#ffb194", 2);
 }
-testIt();
+window.mobilIt = function () {
+    let div10 = document.getElementById('div10');
+    let div11 = document.getElementById('div11');
+    let div12 = document.getElementById('div12');
+    debugger;
+    connect(div10, div11, "#ff632a", 2);
+    connect(div11, div12, "#ffb194", 2);
+    debugger;
+}
+if (isMobile.any()) {
+    mobilIt();
+} else  {
+    testIt();
+}

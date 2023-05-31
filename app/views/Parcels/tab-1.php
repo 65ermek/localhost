@@ -2,7 +2,7 @@
     <section class="method">
         <div class="tabs__title">Выберите способ отправки посылки</div>
         <div class="section__block">
-            <label class="section__block-label" for="radioDelivery1">
+            <label class="section__block-label section__block-label__first" for="radioDelivery1">
                 <div class="section__block-holder">
                     <div class="section__block-title">Без наклейки</div>
                     <p class="section__block-text">Вам не нужно ничего печатать, вы получаете SmartPIN и QR-код с оплаченной доставкой</p>
@@ -10,21 +10,21 @@
                         <input checked="checked" type="radio" id="radioDelivery1" class="radio__input"  name="delivery-method" value="qr">
                         <label for="radioDelivery1" class="radio__label">Выбрано</label>
                     </div>
-                    <img src="/../images/png/mobile.png" alt="mobile" class="section__block-img">
+                    <img src="/../images/jpeg/qr.jpg" alt="mobile" class="section__block-img">
                 </div>
             </label>
-            <label class="section__block-label" for="radioDelivery2">
+            <label class="section__block-label section__block-label__first" for="radioDelivery2">
                 <div class="section__block-holder">
                     <div class="section__block-title">С наклейкой</div>
-                        <p class="section__block-text">После оплаты заказа распечатайте этикетку и обязательно наклейте ее на посылку</p>
-                        <div class="step__one-radio">
-                            <input type="radio" id="radioDelivery2" class="radio__input"  name="delivery-method" value="pdf">
-                            <label for="radioDelivery2" class="radio__label">Выбрано</label>
-                        </div>
-                        <img src="/../images/png/printer.png" alt="printer" class="section__block-img">
+                    <p class="section__block-text">После оплаты заказа распечатайте этикетку и обязательно наклейте ее на посылку</p>
+                    <div class="step__one-radio">
+                        <input type="radio" id="radioDelivery2" class="radio__input"  name="delivery-method" value="pdf">
+                        <label for="radioDelivery2" class="radio__label">Выбрано</label>
                     </div>
+                    <img src="/../images/jpeg/qr1.jpg" alt="printer" class="section__block-img">
                 </div>
             </label>
+        </div>
     </section>
     <section class="country">
         <div class="tabs__title">Выбор страны адресата</div>

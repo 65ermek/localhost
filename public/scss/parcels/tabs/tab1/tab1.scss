@@ -1,11 +1,22 @@
 .section__block {
   display: flex;
-  flex: 0 0 100%;
   max-width: 100%;
+  border: 1px solid #0f5132;
 }
 .section__block-label {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+}
+.section__block-label__first {
+  flex: 0 0 50%;
+  max-width: 50%;
+  border: 1px solid red;
+}
+.section__block-holder {
+
+}
+.section__block-img {
+
 }
 .step__one-radio {
   position: relative;
