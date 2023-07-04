@@ -5,7 +5,7 @@
             <label class="section__block-label section__block-label__first" for="radioDelivery1">
                 <div class="section__block-holder">
                     <div class="section__block-title">Без наклейки</div>
-                    <p class="section__block-text">Вам не нужно ничего печатать, вы получаете SmartPIN и QR-код с оплаченной доставкой</p>
+                    <p class="section__block-text">Вам не нужно ничего печатать. <br>После оплаты доставки к вам на телефон придёт <br>QR-код и SmartPIN.</p>
                     <div class="step__one-radio">
                         <input checked="checked" type="radio" id="radioDelivery1" class="radio__input"  name="delivery-method" value="qr">
                         <label for="radioDelivery1" class="radio__label">Выбрано</label>
@@ -16,7 +16,7 @@
             <label class="section__block-label section__block-label__first" for="radioDelivery2">
                 <div class="section__block-holder">
                     <div class="section__block-title">С наклейкой</div>
-                    <p class="section__block-text">После оплаты заказа распечатайте этикетку и обязательно наклейте ее на посылку</p>
+                    <p class="section__block-text">После оплаты заказа распечатайте этикетку и <br>наклейте ее на посылку.<br>. </p>
                     <div class="step__one-radio">
                         <input type="radio" id="radioDelivery2" class="radio__input"  name="delivery-method" value="pdf">
                         <label for="radioDelivery2" class="radio__label">Выбрано</label>

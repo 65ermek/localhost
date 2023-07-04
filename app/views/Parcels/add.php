@@ -1,5 +1,6 @@
+
 <div class="container">
-    <div class="tabs__title">Оформление посылки</div>
+    <div class="section__two-h1">Оформление посылки</div>
     <div class="tabs">
         <div class="tabs__nav tabs__nav-pc">
             <span class="line" id="div0"></span>
@@ -12,8 +13,8 @@
         </div>
         <div class="tabs__nav tabs__nav-mob">
             <span class="line" id="div10"></span>
-            <div class="tab__nav-link-mob active"><span class="tab__num" id="div11">1</span></div>
-            <div class="tab__nav-link-mob__right"><span class="tab__num" id="div12">2</span></div>
+            <div class="tab__nav-link-mob active"><span class="tab__num" id="div11"></span></div>
+            <div class="tab__nav-link-mob__right"><span class="tab__num" id="div12"></span></div>
         </div>
     </div>
     <div class="tab__content">
@@ -28,6 +29,8 @@
 <script src="/js/choice.js"></script>
 <script>
     let openTab = {
+        tabNumBig: document.getElementById('div11'),
+        tabNumSmall: document.getElementById('div12'),
         openProg1() {
             let num = document.querySelectorAll('.tab__nav-link')[0];
             num.classList.add('active');
@@ -35,6 +38,9 @@
         openTab1() {
             let tabItem = document.querySelectorAll('.tab__item')[0];
             tabItem.classList.add('active');
+            this.tabNumBig.innerHTML = '1';
+            this.tabNumSmall.innerHTML = '2';
+
         },
         closeProg1() {
             let num = document.querySelectorAll('.tab__nav-link')[0];
@@ -55,6 +61,8 @@
         openTab2() {
             let tabItem = document.querySelectorAll('.tab__item')[1];
             tabItem.classList.add('active');
+            this.tabNumBig.innerHTML = '2';
+            this.tabNumSmall.innerHTML = '3';
         },
         closeProg2() {
             let num = document.querySelectorAll('.tab__nav-link')[1];
@@ -75,6 +83,8 @@
         openTab3() {
             let tabItem = document.querySelectorAll('.tab__item')[2];
             tabItem.classList.add('active');
+            this.tabNumBig.innerHTML = '3';
+            this.tabNumSmall.innerHTML = '4';
         },
         closeProg3() {
             let num = document.querySelectorAll('.tab__nav-link')[2];
@@ -95,6 +105,8 @@
         openTab4() {
             let tabItem = document.querySelectorAll('.tab__item')[3];
             tabItem.classList.add('active');
+            this.tabNumBig.innerHTML = '4';
+            this.tabNumSmall.innerHTML = '5';
         },
         closeProg4() {
             let num = document.querySelectorAll('.tab__nav-link')[3];

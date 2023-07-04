@@ -2,9 +2,9 @@ function connect(div1, div2, color, thickness) {
     const off1 = getOffset(div1);
     const off2 = getOffset(div2);
     const x1 = off1.left + (off1.width/2);
-    const y1 = off1.top + off1.height - 35;
+    const y1 = off1.top + (off1.height/2);
     const x2 = off2.left + (off2.width/2);
-    const y2 = off2.top + 35;
+    const y2 = off2.top + off2.height/2;
     const length = Math.sqrt(((x2-x1) * (x2-x1)) + ((y2-y1) * (y2-y1)));
     const cx = ((x1 + x2) / 2) - (length / 2);
     const cy = ((y1 + y2) / 2) - (thickness / 2);
@@ -43,10 +43,8 @@ window.mobilIt = function () {
     let div10 = document.getElementById('div10');
     let div11 = document.getElementById('div11');
     let div12 = document.getElementById('div12');
-    debugger;
     connect(div10, div11, "#ff632a", 2);
     connect(div11, div12, "#ffb194", 2);
-    debugger;
 }
 if (isMobile.any()) {
     mobilIt();

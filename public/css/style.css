@@ -368,7 +368,7 @@ body._lock {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .main {
@@ -822,6 +822,10 @@ body._touch .menu__list li.active .menu__sub-list {
   border: 1px solid red;
 }
 
+.section__block-text {
+  line-height: 1.5;
+}
+
 .step__one-radio {
   position: relative;
   display: flex;
@@ -882,6 +886,13 @@ body._touch .menu__list li.active .menu__sub-list {
 
 .sentChoice__block {
   display: none;
+}
+
+.spacer {
+  background-image: url("../../../public/images/png/shadow.png");
+  background-repeat: repeat-x;
+  height: 12px;
+  z-index: 20;
 }
 
 .tabs__title {

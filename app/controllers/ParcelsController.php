@@ -8,7 +8,7 @@ use vendor\core\base\View;
 
 class ParcelsController extends AppController {
 
-    public $layout = 'main';
+    public $layout = 'default';
     public function indexAction() {
 
     }

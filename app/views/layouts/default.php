@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php \vendor\core\base\View::getMeta();?>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 
 </head>
 <body>
-<?=$content?>
 <div class="wrapper">
     <header class="header">
         <div class="header__container">
             <a href="/" class="header__logo">
-                <img src="images/png/post.png" alt="">
+                <img src="/images/png/post.png" alt="">
             </a>
             <div class="header__menu menu">
                 <div class="menu__icon"><span></span></div>
@@ -61,7 +59,9 @@
                 </nav>
             </div>
         </div>
+        <div class="spacer"></div>
     </header>
+
     <main class="main">
         <?=$content?>
     </main>
@@ -69,7 +69,6 @@
     <footer class="footer">Футер</footer>
 </div>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 <?php
 foreach ($scripts as $script){
