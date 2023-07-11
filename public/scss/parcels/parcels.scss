@@ -1,0 +1,132 @@
+@import "tabs/tabs";
+.spacer {
+  background-image: url("../../../public/images/png/shadow.png");
+  background-repeat: repeat-x;
+  height: 12px;
+  z-index: 20;
+}
+.tabs__title {
+  font-size: 24px;
+  padding: 20px 60px;
+  font-family: Montserrat,sans-serif;
+}
+.tabs {
+  font-family: Montserrat, sans-serif;
+  color: #999999;
+  text-align: center;
+}
+.tabs__nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+}
+body._touch .tabs__nav-pc {
+  display: none;
+}
+body._touch .tabs__nav {
+  align-items: center;
+}
+body._touch .line {
+  position: absolute;
+  left: 0;
+}
+body._touch .tab__nav-link-mob__right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -25px;
+}
+body._touch .tabs__nav-mob .active {
+
+}
+body._pc .tabs__nav-mob {
+  display: none;
+}
+body._touch .tabs__nav-mob {
+  display: block;
+  position: relative;
+}
+.tab__nav-link span {
+  display: flex;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #ffb194;
+  color: #ffffff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 24px;
+  margin: auto;
+}
+.tab__nav-link-mob span {
+  display: flex;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #ffb194;
+  color: #ffffff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 24px;
+  margin: auto;
+}
+.tab__nav-link-mob__right span {
+  display: flex;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  //border: 10px solid #ffffff;
+  background-color: #ffb194;
+  color: #ffffff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 24px;
+
+}
+.tab__nav-title {
+  margin: 20px 0;
+}
+.tab__nav-link.active > p{
+  font-family: Montserrat-Bold,sans-serif;
+  color: #2f2f2f;
+}
+.tab__nav-link-mob.active > p{
+  font-family: Montserrat-Bold,sans-serif;
+  color: #2f2f2f;
+}
+.tab__nav-link.active span{
+  background-color: #ff632a;
+  font-family: Montserrat-Bold, sans-serif;
+}
+.tab__nav-link-mob.active span{
+  height: 70px;
+  width: 70px;
+  background-color: #ff632a;
+  font-family: Montserrat-Bold, sans-serif;
+}
+.tab__item {
+  display: none;
+}
+.tab__item.active {
+  display: block;
+}
+.tab__nav-link > p{
+  color: #787878;
+}
+.tab__nav-link-mob > p{
+  color: #787878;
+}
+.tab__nav-link {
+  width: 20%;
+}
+.line {
+  height: 70px;
+
+}

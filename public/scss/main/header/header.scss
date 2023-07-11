@@ -1,0 +1,80 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #ffffff;
+}
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 0 30px;
+}
+.header__logo {
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+  width: 80px;
+}
+.menu__body {
+  display: flex;
+  align-items: center;
+}
+.menu__icon {
+  display: none;
+}
+.menu__list li {
+  margin: 0 0 0 20px;
+}
+.menu__list {
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.menu__list-auth a {
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.menu__list-auth a:hover {
+  background-color: #F3F2F5;
+}
+.menu__link {
+  color: #333333;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+.menu__link:hover {
+  background-color: #F3F2F5;
+}
+.menu__sub-list {
+  position: absolute;
+  top: 55px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: rgba(20, 20, 20, 0.1) 0 0 1px, rgba(20, 20, 20, 0.1) 0px 0px 8px, rgba(20, 20, 20, 0.04) 0px 8px 8px;
+  overflow: hidden;
+  width: 350px;
+}
+.menu__sub-list li {
+  margin: 0; //отвечает за наезд мыши на суб.меню
+}
+.menu__sub-list li:last-child {
+  margin: 0;
+}
+.menu__sub-link {
+  color: #333333;
+  display: block;
+  padding: 10px 0;
+}

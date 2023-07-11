@@ -1,0 +1,30 @@
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-map" viewBox="0 0 60 60">
+        <g>
+            <path d="M30.01 55c.29 0 .56-.13.75-.34.64-.74 15.64-18.12 15.64-33.27C46.4 12.35 39.05 5 30.01 5s-16.4 7.35-16.4 16.39c0 15.15 15 32.53 15.64 33.27.18.21.47.34.76.34zm-8.85-33.61c0-4.87 3.97-8.84 8.85-8.84s8.85 3.97 8.85 8.84c0 4.88-3.97 8.85-8.85 8.85s-8.85-3.97-8.85-8.85z" class="">
+            </path>
+        </g>
+    </symbol>
+    <symbol id="clock" viewBox="0 -8 72 72">
+        <g>
+            <path d="M36,0A28,28,0,1,0,64,28,28,28,0,0,0,36,0Zm0,50A22,22,0,1,1,58,28,22.07,22.07,0,0,1,36,50Z"/>
+            <path d="M50.59,27.14H38V12a2.31,2.31,0,1,0-4.61,0V29.44a2.31,2.31,0,0,0,2.3,2.31H50.59a2.31,2.31,0,1,0,0-4.61Z"/>
+        </g>
+    </symbol>
+    <symbol id="location-my">
+        <g>
+            <path d="M19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12Z" stroke="#34B0F8" stroke-width="2"/>
+            <path d="M19 12H21" stroke="#34B0F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 12H5" stroke="#34B0F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 19L12 21" stroke="#34B0F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 3L12 5" stroke="#34B0F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="#34B0F8" stroke-width="2"/>
+        </g>
+    </symbol>
+    <symbol id="home" viewBox="0 0 32 32">
+        <g>
+            <path d="M27 18.039L16 9.501 5 18.039V14.56l11-8.54 11 8.538v3.481zm-2.75-.31v8.251h-5.5v-5.5h-5.5v5.5h-5.5v-8.25L16 11.543l8.25 6.186z"/>
+        </g>
+
+    </symbol>
+</svg>

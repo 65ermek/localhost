@@ -1,0 +1,22 @@
+{
+  "name": "vendor_name/localhost",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "localhost\\": "vendor",
+      "app\\": "app"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ermek",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "": "",
+    "ext-pdo": "*"
+  }
+}
