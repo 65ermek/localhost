@@ -10,7 +10,7 @@ function connect(div1, div2, color, thickness) {
     const cy = ((y1 + y2) / 2) - (thickness / 2);
     const angle = Math.atan2((y1-y2),(x1-x2))*(180/Math.PI);
     let line = document.createElement('div');
-    line.setAttribute('style', "padding:0px; margin:0px; height:" + thickness + "px; background-color:" + color + "; line-height:1px; position:absolute; left:" + cx + "px; top:" + cy + "px; width:" + length + "px; -moz-transform:rotate(" + angle + "deg); -webkit-transform:rotate(" + angle + "deg); -o-transform:rotate(" + angle + "deg); -ms-transform:rotate(" + angle + "deg); transform:rotate(" + angle + "deg); z-index: -1;")
+    line.setAttribute('style', "padding:0px; margin:0px; height:" + thickness + "px; background-color:" + color + "; line-height:1px; position:absolute; left:" + cx + "px; top:" + cy + "px; width:" + length + "px; -moz-transform:rotate(" + angle + "deg); -webkit-transform:rotate(" + angle + "deg); -o-transform:rotate(" + angle + "deg); -ms-transform:rotate(" + angle + "deg); transform:rotate(" + angle + "deg); z-index: 1;")
     document.body.appendChild(line);
 }
 

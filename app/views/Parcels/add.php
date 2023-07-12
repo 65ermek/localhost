@@ -1,6 +1,6 @@
 
 <div class="container">
-    <div class="section__two-h1">Оформление посылки</div>
+    <div class="tabs__title">Оформление посылки</div>
     <div class="tabs">
         <div class="tabs__nav tabs__nav-pc">
             <span class="line" id="div0"></span>
@@ -18,11 +18,11 @@
         </div>
     </div>
     <div class="tab__content">
-        <div id="tab_1" class="tab__item"><?php include('tab-1.php')?><button class="tab__next" data-but="2">Далее</button></div>
-        <div id="tab_2" class="tab__item"><?php include('tab-2.php')?><button class="tab__prev" data-but="1">Назад</button><button class="tab__next" data-but="3">Далее</button></div>
-        <div id="tab_3" class="tab__item"><?php include('tab-3.php')?><button class="tab__prev" data-but="2">Назад</button><button class="tab__next" data-but="4">Далее</button></div>
-        <div id="tab_4" class="tab__item"><?php include('tab-4.php')?><button class="tab__prev" data-but="3">Назад</button><button class="tab__next" data-but="5">Далее</button></div>
-        <div id="tab_5" class="tab__item"><?php include('tab-5.php')?><button class="tab__prev" data-but="4">Назад</button></div>
+        <div id="tab_1" class="tab__item"><?php include('tab-1.php')?><button class="tab__next button button__next" data-but="2">Далее</button></div>
+        <div id="tab_2" class="tab__item"><?php include('tab-2.php')?><button class="tab__prev button button__prev" data-but="1">Назад</button><button class="tab__next button button__next" data-but="3">Далее</button></div>
+        <div id="tab_3" class="tab__item"><?php include('tab-3.php')?><button class="tab__prev button button__prev" data-but="2">Назад</button><button class="tab__next button button__next" data-but="4">Далее</button></div>
+        <div id="tab_4" class="tab__item"><?php include('tab-4.php')?><button class="tab__prev button button__prev" data-but="3">Назад</button><button class="tab__next button button__next" data-but="5">Далее</button></div>
+        <div id="tab_5" class="tab__item"><?php include('tab-5.php')?><button class="tab__prev button button__prev" data-but="4">Назад</button></div>
     </div>
 </div>
 <script src="/js/line.js"></script>

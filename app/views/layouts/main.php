@@ -61,7 +61,7 @@
                 <?=$content?>
             </main>
 
-            <footer class="footer">Футер</footer>
+            <footer class="footer"><p>ПОЧТА ДОВЕЗЁМ КУДА УГОДНО 2022 Условия и положения Конфиденциальность</p></footer>
         </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="/js/main.js"></script>

@@ -376,6 +376,11 @@ body._lock {
   flex: 1 1 auto;
 }
 
+.main__default {
+  padding: 80px 0 30px 0;
+  flex: 1 1 auto;
+}
+
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
@@ -414,6 +419,47 @@ body._touch .menu__list li.active .menu__sub-list {
 
 .main {
   padding: 80px 0 0 0;
+}
+
+.main__default {
+  padding: 80px 0 0 0;
+  background-color: #F9FAFB;
+}
+
+.spacer {
+  background-image: url("../../../public/images/png/shadow.png");
+  background-repeat: repeat-x;
+  height: 12px;
+  border-style: solid;
+  border-color: rgba(238, 238, 238, 0.8);
+  border-top-width: 1px;
+  background-position: center top;
+  transition-duration: 0.4s;
+  transition-property: background-color, border-color;
+}
+
+.spacer__block {
+  height: 12px;
+}
+
+.footer {
+  background-image: url("../../../public/images/jpeg/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+.footer p {
+  color: #ffffff;
 }
 
 .bg__athensgray {
@@ -770,12 +816,30 @@ body._touch .menu__list li.active .menu__sub-list {
 }
 .button {
   padding: 15px 35px;
-  font-family: Montserrat-bold, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: transparent;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  line-height: 19.2px;
+  box-shadow: -6px 11px 43px 0px rgba(0, 0, 0, 0.06);
+}
+.button__next {
+  background-color: #34B0F8;
+  color: #ffffff;
+}
+.button__prev {
+  background-color: #333333;
+  color: #ffffff;
 }
 .button__wrapper {
   margin-top: 30px;
@@ -783,11 +847,13 @@ body._touch .menu__list li.active .menu__sub-list {
   justify-content: center;
 }
 .button__lernmore {
+  font-family: Montserrat-bold, sans-serif;
   background-color: #34B0F8;
   margin-right: 30px;
   color: #ffffff;
 }
 .button__sendparcel {
+  font-family: Montserrat-bold, sans-serif;
   background-color: #333333;
   color: #ffffff;
 }
@@ -808,7 +874,6 @@ body._touch .menu__list li.active .menu__sub-list {
 .section__block {
   display: flex;
   max-width: 100%;
-  border: 1px solid #0f5132;
 }
 
 .section__block-label {
@@ -819,11 +884,31 @@ body._touch .menu__list li.active .menu__sub-list {
 .section__block-label__first {
   flex: 0 0 50%;
   max-width: 50%;
-  border: 1px solid red;
+}
+
+.section__block-title__h1 {
+  font-size: calc(18px + 1vw);
+  padding: 30px 0;
+}
+
+.section__block-title {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Montserrat", serif;
+  color: #f96332;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0px;
 }
 
 .section__block-text {
-  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Montserrat", serif;
+  color: #999999;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0px;
 }
 
 .step__one-radio {
@@ -880,6 +965,25 @@ body._touch .menu__list li.active .menu__sub-list {
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  .section__block {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .section__block-label__first {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .section__size {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__block-label {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .postChoice__block {
   display: none;
 }
@@ -888,17 +992,12 @@ body._touch .menu__list li.active .menu__sub-list {
   display: none;
 }
 
-.spacer {
-  background-image: url("../../../public/images/png/shadow.png");
-  background-repeat: repeat-x;
-  height: 12px;
-  z-index: 20;
-}
-
 .tabs__title {
-  font-size: 24px;
-  padding: 20px 60px;
-  font-family: Montserrat, sans-serif;
+  padding: 30px 0;
+  font-size: calc(24px + 1.25vw);
+  line-height: 1.3;
+  margin-bottom: 30px;
+  color: #FF632A;
 }
 
 .tabs {
@@ -912,6 +1011,7 @@ body._touch .menu__list li.active .menu__sub-list {
   justify-content: space-between;
   position: relative;
   margin: auto;
+  z-index: 2;
 }
 
 body._touch .tabs__nav-pc {

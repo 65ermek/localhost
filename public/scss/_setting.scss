@@ -54,6 +54,10 @@ body._lock {
   padding: 80px 0 30px 0;
   flex: 1 1 auto;
 }
+.main__default {
+  padding: 80px 0 30px 0;
+  flex: 1 1 auto;
+}
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
@@ -90,4 +94,40 @@ body._touch .menu__list li.active .menu__sub-list {
 }
 .main {
   padding: 80px 0 0 0;
+}
+.main__default {
+  padding: 80px 0 0 0;
+  background-color: #F9FAFB;
+}
+.spacer {
+  background-image: url("../../../public/images/png/shadow.png");
+  background-repeat: repeat-x;
+  height: 12px;
+  border-style: solid;
+  border-color: rgba(238,238,238,0.8);
+  border-top-width: 1px;
+  background-position: center top;
+  transition-duration: 0.4s;
+  transition-property: background-color, border-color;
+}
+.spacer__block {
+  height: 12px;
+}
+.footer {
+  background-image: url("../../../public/images/jpeg/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+.footer p {
+  color: #ffffff;
 }

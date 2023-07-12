@@ -1,6 +1,6 @@
 <section class="tab2">
     <section class="choice">
-        <div class="tabs__title">Выберите, как вы хотите отправить посылку</div>
+        <div class="section__block-title__h1">Выберите, как вы хотите отправить посылку</div>
         <div class="section__block">
             <label class="section__block-label" for="radioPost1">
                 <div class="section__block-holder">
@@ -32,12 +32,12 @@
             <div class="info__link">Посмотреть ближайшие постаматы ...</div>
         </div>
         <div id="block3" class="postChoice__block">
-            <div class="tabs__title">Запланировать приезд курьера</div>
+            <div class="section__block-title__h1">Запланировать приезд курьера</div>
             <div class="form-control">Сбор осуществляется с 8:00 до 18:00.</div>
         </div>
     </section>
     <section class="sender">
-        <div class="tabs__title">Кто посылку отсылает</div>
+        <div class="section__block-title__h1">Кто посылку отсылает</div>
         <input type="radio" name="type" value="individual" checked> Частное лицо
         <input type="radio" name="type" value="corporate"> Юридическое лицо
     </section>

@@ -3,7 +3,7 @@
 namespace app\controllers;
 
 
-use app\models\Main;
+use app\models\Parcels;
 use vendor\core\base\View;
 
 class ParcelsController extends AppController {
@@ -13,11 +13,10 @@ class ParcelsController extends AppController {
 
     }
     public function addAction() {
-        new Main();
+        new Parcels();
         $langs = \R::findAll('country');
-        $parcels = \R::findAll('parcels');
         View::setMeta('Добавление посылки', 'Описание страницы Добавление посылки', 'Ключевые слова Добавление посылки');
-        $this->set(compact( 'langs', 'parcels'));
+        $this->set(compact( 'langs' ));
     }
     public function editAction() {
 

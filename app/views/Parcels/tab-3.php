@@ -1,6 +1,6 @@
 <section class="tab3">
     <section class="deliver">
-        <div class="tabs__title">Выберите, куда вы хотите доставить посылку</div>
+        <div class="section__block-title__h1">Выберите, куда вы хотите доставить посылку</div>
         <div class="section__block">
             <label class="section__block-label" for="radioRecipient1">
                 <div class="section__block-holder">
@@ -28,7 +28,7 @@
     </section>
     <section class="sentChoice">
         <div id="blockSend1" class="sentChoice__block">
-            <div class="tabs__title">Выберите, ближайший почтовый офис</div>
+            <div class="section__block-title__h1">Выберите, ближайший почтовый офис</div>
             <div class="info__link">Найти ближайший почтовый офис ...</div>
         </div>
         <div id="blockSend2" class="sentChoice__block">
@@ -41,7 +41,7 @@
         </div>
     </section>
     <section class="deliverData">
-        <div class="tabs__title">Кому посылку посылаете</div>
+        <div class="section__block-title__h1">Кому посылку посылаете</div>
         <div class="deliver__name">
             <label for="deliver-name">Имя и Фамилия получателя:</label>
             <input type="text" id="deliver-name" name="deliver-name" required>
