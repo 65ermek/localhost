@@ -15,7 +15,7 @@ class ParcelsController extends AppController {
     public function addAction() {
         new Parcels();
         $langs = \R::findAll('country');
-        View::setMeta('Добавление посылки', 'Описание страницы Добавление посылки', 'Ключевые слова Добавление посылки');
+        View::setMeta('Добавление посылки', 'Описание страницы: Добавление посылки', 'Ключевые слова: Добавление посылки');
         $this->set(compact( 'langs' ));
     }
     public function editAction() {

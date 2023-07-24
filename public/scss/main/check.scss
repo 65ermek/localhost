@@ -1,0 +1,25 @@
+.checkbox__package-label{
+  padding-left: 1.2em;
+}
+.checkbox__package-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check__box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+
+}
+.checkbox__package-input:checked + .check__box {
+  background-image: url("/../images/png/check.png");
+  background-color: green;
+}
+.checkbox__package-input:focus + .check__box {
+  border: 1px solid green;
+}

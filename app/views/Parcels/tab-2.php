@@ -3,25 +3,21 @@
         <div class="section__block-title__h1">Выберите, как вы хотите отправить посылку</div>
         <div class="section__block">
             <label class="section__block-label" for="radioPost1">
+                <input checked="checked" type="radio" id="radioPost1" class="radio__input"  name="choiceSize" value="block1">
+                <span class="radio__label">Выбрано</span>
                 <div class="section__block-holder">
-                    <div class="section__block-title">Отнести на отделение Почты</div>
+                    <img src="/../images/jpeg/postamat.jpg" alt="small" class="section__block-img">
+                    <div class="section__block-title">Отнести на Почту</div>
                     <p class="section__block-text">+ 0 рублей</p>
-                    <div class="step__one-radio">
-                        <input checked="checked" type="radio" id="radioPost1" class="radio__input"  name="choiceSize" value="block1">
-                        <label for="radioPost1" class="radio__label">Выбрано</label>
-                    </div>
-                    <img src="/../images/png/small.png" alt="small" class="section__block-img">
                 </div>
             </label>
             <label class="section__block-label" for="radioPost2">
+                <input type="radio" id="radioPost2" class="radio__input"  name="choiceSize" value="block3">
+                <span class="radio__label">Выбрано</span>
                 <div class="section__block-holder">
+                    <img src="/../images/jpeg/curier.jpg" alt="courier" class="section__block-img">
                     <div class="section__block-title">Вызвать курьера домой</div>
                     <p class="section__block-text">+ 100 рублей</p>
-                    <div class="step__one-radio">
-                        <input type="radio" id="radioPost2" class="radio__input"  name="choiceSize" value="block3">
-                        <label for="radioPost2" class="radio__label">Выбрано</label>
-                    </div>
-                    <img src="/../images/png/big.png" alt="big" class="section__block-img">
                 </div>
             </label>
         </div>

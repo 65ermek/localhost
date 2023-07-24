@@ -3,17 +3,28 @@
   max-width: 100%;
 }
 .section__block-label {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-}
-.section__block-label__first {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-right: 30px;
 
+}
+.section__block-holder {
+  background-color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+
+
+.section__block-label__first {
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 .section__block-title__h1 {
   font-size: calc(18px + 1vw);
-  padding: 30px 0;
+  padding: 30px 10px;
+  line-height: 1.5;
 }
 .section__block-title {
   font-weight: 400;
@@ -31,10 +42,7 @@
   color: #999999;
   font-size: 18px;
   line-height: 1.7;
-  letter-spacing: 0px;
-}
-.section__block-holder {
-
+  letter-spacing: 0;
 }
 .section__block-img {
 
@@ -46,50 +54,37 @@
 
 .radio__input {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   position: absolute;
 }
+.step__one-radio {
 
+}
 .radio__label {
+  position: absolute;
+  height: 24px;
+  margin: 20px;
   padding-left: 35px;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   color: #999999;
   cursor: pointer;
+  background:  url("/../images/png/ok.png") no-repeat;
   opacity: 0;
 }
-
-.radio__label:before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: background 0.1s linear, border 0.1s linear;
-}
-
-.radio__label:after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: green url("/../images/png/check.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
 .radio__input:checked + .radio__label {
   opacity: 1;
 }
-
-.radio__input:checked ~ .radio__label {
-  opacity: 1;
+.radio__input:checked ~ .section__block-holder {
+  background-color: #fff;
+  border: 1px solid #95c620 !important;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
+.country {
+  display: flex;
 
+}
+.select__country {
+  margin-left: 50px;
+}

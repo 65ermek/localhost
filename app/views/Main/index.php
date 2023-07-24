@@ -8,7 +8,7 @@
             <p class="page__section-p">Представляем Вашему вниманию решение по доставке посылок по России и не только. Наша цифровая платформа придает новые возможности.</p>
             <div class="button__wrapper">
                 <a href="" class="button button__lernmore">УЗНАТЬ БОЛЬШЕ</a>
-                <a href="" class="button button__sendparcel">Послать посылку</a>
+                <a href="/parcels/add" class="button button__sendparcel">Послать посылку</a>
             </div>
         </div>
     </div>

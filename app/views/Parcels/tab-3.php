@@ -3,25 +3,21 @@
         <div class="section__block-title__h1">Выберите, куда вы хотите доставить посылку</div>
         <div class="section__block">
             <label class="section__block-label" for="radioRecipient1">
+                <input checked type="radio" id="radioRecipient1" class="radio__input"  name="sendSize" value="blockSend1">
+                <span class="radio__label">Выбрано</span>
                 <div class="section__block-holder">
-                    <div class="section__block-title">Доставить на отделение Почты</div>
+                    <img src="/../images/jpeg/postamat.jpg" alt="postamat" class="section__block-img">
+                    <div class="section__block-title">Доставить на Постамат</div>
                     <p class="section__block-text">+ 0 рублей</p>
-                    <div class="step__one-radio">
-                        <input checked type="radio" id="radioRecipient1" class="radio__input"  name="sendSize" value="blockSend1">
-                        <label for="radioRecipient1" class="radio__label">Выбрано</label>
-                    </div>
-                    <img src="" alt="" class="section__block-img">
                 </div>
             </label>
             <label class="section__block-label" for="radioRecipient2">
+                <input type="radio" id="radioRecipient2" class="radio__input"  name="sendSize" value="blockSend3">
+                <span class="radio__label">Выбрано</span>
                 <div class="section__block-holder">
-                    <div class="section__block-title">Доставить домой через курьера </div>
+                    <img src="/../images/jpeg/curier.jpg" alt="courier" class="section__block-img">
+                    <div class="section__block-title">Доставить домой</div>
                     <p class="section__block-text">+ 100 рублей</p>
-                    <div class="step__one-radio">
-                        <input type="radio" id="radioRecipient2" class="radio__input"  name="sendSize" value="blockSend3">
-                        <label for="radioRecipient2" class="radio__label">Выбрано</label>
-                    </div>
-                    <img src="" alt="" class="section__block-img">
                 </div>
             </label>
         </div>
